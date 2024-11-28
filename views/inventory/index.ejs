@@ -1,0 +1,10 @@
+<h1>Inventory</h1>
+<ul>
+    <% if (items && items.length > 0) { %>
+        <% items.forEach(item => { %>
+            <li><%= item.name %> - <%= item.quantity %> - <%= item.location %></li>
+        <% }) %>
+    <% } else { %>
+        <li>No items available.</li>
+    <% } %>
+</ul>

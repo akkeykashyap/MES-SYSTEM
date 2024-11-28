@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= channel.name %> Channel</title>
+</head>
+<body>
+  <h1><%= channel.name %> Channel</h1>
+  <ul>
+    <% channel.items.forEach(item => { %>
+      <li><%= item.name %> - <%= item.quantity %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>
